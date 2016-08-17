@@ -12,8 +12,8 @@ var core;
         canvas = document.getElementById("canvas");
         stage = new createjs.Stage(canvas);
         stage.addChild(RollButton);
-
         stage.enableMouseOver(20);
+        RollButton.addEventListener("click", RollButtonClicked);
         createjs.Ticker.framerate = 60;
         createjs.Ticker.on("tick", gameLoop);
         main();
@@ -30,6 +30,7 @@ var core;
 
     function RollButtonClicked() {
         var RandomNumber = Math.floor(Math.random() * 6) + 1;
+        console.log("The random number is: " + RandomNumber);
         switch (RandomNumber) {
             case 1:
                 break;
