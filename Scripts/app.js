@@ -3,6 +3,7 @@ var core;
     "use strict";
     var canvas = document.getElementById("canvas");
     var stage;
+    stage = new createjs.Stage(canvas);
     var RollButton = new createjs.Bitmap("Assets/images/rollButton.png");
     // app entry function
     function init() {
