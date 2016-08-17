@@ -5,8 +5,8 @@ var core;
     var stage;
     //stage = new createjs.Stage(canvas);
     var RollButton = new createjs.Bitmap("Assets/images/rollButton.png");
-    RollButton.x = 300;
-    RollButton.y = 300;
+    RollButton.x = 200;
+    RollButton.y = 500;
     // app entry function
     function init() {
         canvas = document.getElementById("canvas");
