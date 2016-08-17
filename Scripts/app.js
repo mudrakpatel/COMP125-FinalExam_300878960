@@ -9,7 +9,7 @@ var core;
     function init() {
         canvas = document.getElementById("canvas");
         stage = new createjs.Stage(canvas);
-        stage.addchild(RollButton);
+        stage.addChild(RollButton);
         stage.enableMouseOver(20);
         createjs.Ticker.framerate = 60;
         createjs.Ticker.on("tick", gameLoop);
